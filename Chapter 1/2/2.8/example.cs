@@ -13,8 +13,8 @@ class explain {
 
         // Square Root Function
         double d = Math.Sqrt(discriminant);
+        
         // Square Root Function
-
         Console.WriteLine((-b + d) / 2.0);
         Console.WriteLine((-b - d) / 2.0);
     }
