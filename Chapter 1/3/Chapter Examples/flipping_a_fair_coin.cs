@@ -1,8 +1,7 @@
 using System;
-
 public class Flip {
     public static void Main(string[] args) {
-        Random random = new Random();
+        Random random = new Random(1);
         double randomNumber = random.NextDouble();
         Console.WriteLine(randomNumber);
 
