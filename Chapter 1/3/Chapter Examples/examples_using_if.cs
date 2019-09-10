@@ -5,6 +5,10 @@ class Example
     public static void Main(string[] args)
     {
         absolute_value();
+        small_to_larger();
+        max_of_x_and_y();
+        err_check_for_div_operator();
+        err_check_quad_formula();
 
     }
 
