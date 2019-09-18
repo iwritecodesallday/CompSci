@@ -22,6 +22,8 @@ public class example {
         }
         Console.WriteLine("End \n");
 
+        // WHY
+        
         for (i = 0, j = 0; i < 10; i++) {
             j += j++;
             Console.WriteLine(j);

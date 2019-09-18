@@ -6,7 +6,7 @@ public class example
     {
         Random random = new Random();
         double chances = random.NextDouble();
-        int roll = 0;
+        int roll;
 
         if (chances >= 0.25)
         {

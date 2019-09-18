@@ -12,7 +12,7 @@ class Example {
         // Correct - Absolute Value
         if (a > b ) c = 0;
         
-        if (a > b ) c = 0 else b = 0;
+        if (a > b ) c = 0; else b = 0;
 
     }
 }
