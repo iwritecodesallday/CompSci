@@ -19,6 +19,7 @@ public class deal
             "Jack of Clubs",
             "Queen of Clubs",
             "King of Clubs",
+            "Ace of Clubs"
         };
         String[] Spades = {
             "2 of Spades",
@@ -33,6 +34,7 @@ public class deal
             "Jack of Spades",
             "Queen of Spades",
             "King of Spades",
+            "Ace of Spades"
         };
         String[] Diamonds = {
             "2 of Diamonds",
@@ -47,6 +49,7 @@ public class deal
             "Jack of Diamonds",
             "Queen of Diamonds",
             "King of Diamonds",
+            "Ace of Diamonds"
         };
         String[] Hearts = {
             "2 of Hearts",
@@ -61,6 +64,7 @@ public class deal
             "Jack of Hearts",
             "Queen of Hearts",
             "King of Hearts",
+            "Ace of Hearts"
         };
 
         string[] cards = new String[5];
