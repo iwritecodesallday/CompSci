@@ -7,8 +7,9 @@ public class example {
     public static void Main(string[] args) {
         double[] a;
         a = new double[n];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 1000; i++) {
             a[i] = 0.0;
         }
+        Console.WriteLine(a[1000]);
     }
 }
