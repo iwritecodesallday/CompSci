@@ -42,10 +42,10 @@ public class deal
 
         for (int j = 0; j < n_hands; j++)
         {
-            Console.WriteLine(j);
+            Console.WriteLine("Hand: " + (j + 1));
             for (int i = 0; i < m; i++)
             {
-                Console.WriteLine(deck[perm[i*n_hands + j]]);
+                Console.WriteLine(deck[perm[i * n_hands + j]]);
             }
             Console.WriteLine();
         }
@@ -56,6 +56,4 @@ public class deal
     // Write a program "Deal" that takes an integer command-line argument "n" and prints "n poker hands" 
     // (five cards each) from a shuffled deck, seperated by blank lines
 
-    // Answer:
-    // 
 }
