@@ -12,6 +12,10 @@ public class deal
             for (int j = 0; j < SUITS.Length; j++)
                 deck[SUITS.Length * i + j] = RANKS[i] + " of " + SUITS[j];
 
+        // Hand Model
+        Int32 n_hands = Int32.Parse(args[0]);
+        // String[] hand = new String[n_hands];
+
         // m = cards in hand
         // n = cards in deck
         Int32 m = 5;
@@ -35,17 +39,19 @@ public class deal
             perm[i] = t;
         }
 
-        // Without this loop, cards are not drawn
-        for (int i = 0; i < m; i++)
-        {
-            Console.WriteLine(deck[perm[i]]);
-        }
-        Console.WriteLine();
 
+        for (int j = 0; j < n_hands; j++)
+        {
+            Console.WriteLine(j);
+            for (int i = 0; i < m; i++)
+            {
+                Console.WriteLine(deck[perm[i*n_hands + j]]);
+            }
+            Console.WriteLine();
+        }
+        // Without this loop, cards are not drawn
 
     }
-
-
     // Question:
     // Write a program "Deal" that takes an integer command-line argument "n" and prints "n poker hands" 
     // (five cards each) from a shuffled deck, seperated by blank lines
