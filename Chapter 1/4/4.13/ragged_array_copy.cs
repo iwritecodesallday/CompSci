@@ -16,11 +16,13 @@ public class ragged_array_copy
 
         // Create a ragged array
         Int32[][] jaggedArray = new Int32[3][];
+        jaggedArray[0] = new int[] { 1, 3, 5, 7, 9 };
+        jaggedArray[1] = new int[] { 0, 2, 4, 6 };
+        jaggedArray[2] = new int[] { 11, 22 };
         
         for (Int32 i = 0; i < jaggedArray.Length; i++) {
-            Console.WriteLine(jaggedArray[i][i]);
+            for (Int32 j = 0; j < jaggedArray[i].Length; j++)
+                Console.WriteLine(jaggedArray[i][j]);
         }
-
-        Console.WriteLine(jaggedArray.Length);
     }
 }
