@@ -5,7 +5,13 @@ public class dot_multiply
     public static void Main(string[] args)
     {
 
-        Int32 m = 2, n = 3, p = 3, q = 3, i, j, k;
+        Int32 
+        m = 2, 
+        n = 3, 
+        p = 3, 
+        q = 3, 
+        i, j, k;
+
         Int32[,] a = {
             { 1, 4, 2 },
             { 2, 5, 1 }
@@ -41,6 +47,7 @@ public class dot_multiply
         }
         else
         {
+            
             Int32[,] c = new Int32[m, q];
             for (i = 0; i < m; i++)
             {
