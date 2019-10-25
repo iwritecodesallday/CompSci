@@ -61,10 +61,8 @@ public class SelfAvoidingWalk
                 // Console.WriteLine("{0}, {1}, {2}", x ,y, steps);
                 
             }
-            Console.WriteLine("{0}, {1}, {2}%", a[x, y], 100 * steps / n, 100 * deadEnds / trials );
-            steps = 0;
+            // Console.WriteLine("{0}, {1}, {2}%", a[x, y], steps, 100 * deadEnds / trials );
         }
-        Console.WriteLine("{0}% dead ends", 100 * deadEnds / trials);
-        
+        Console.WriteLine("{0}% dead ends, Average Steps: {1} ", 100 * deadEnds / trials, steps / trials);
     }
 }
