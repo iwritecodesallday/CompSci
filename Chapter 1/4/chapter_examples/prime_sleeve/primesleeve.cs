@@ -11,7 +11,6 @@ public class prime_sleeve
         Boolean[] isPrime = new Boolean[n + 1];
         for (Int32 i = 2; i <= n; i++) {
             isPrime[i] = true;
-            Console.WriteLine(isPrime[i]);
         }
 
         for (Int32 i = 2; i <= (n / i); i++) {
@@ -20,7 +19,7 @@ public class prime_sleeve
                 for (Int32 j = i; j <= (n / i); j++)
                 {
                     isPrime[i * j] = false;
-                    Console.WriteLine(isPrime[i * j]);
+                    
                 }
             }
         }
@@ -30,9 +29,9 @@ public class prime_sleeve
         Int32 primes = 0;
         for (Int32 i = 2; i <= n; i++)
         {
-            Console.WriteLine(i);
             if (isPrime[i]) primes++;
         }
+        Console.WriteLine(primes);
         
     }
 }
